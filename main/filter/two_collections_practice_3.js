@@ -1,15 +1,9 @@
-'use strict';
+"use strict";
 
 function choose_divisible_integer(collection_a, collection_b) {
-  let res = [];
-   for (let itemA of collection_a) {
-      for (let itemB of collection_b) {
-      if (0 === itemA % itemB) {
-        res.push(itemA);
-      }
-    }
-  }
-  return res;
+  return collection_a.filter(itemA =>
+    collection_b.some(itemB => !(itemA % itemB))
+  );
 }
 
 module.exports = choose_divisible_integer;
