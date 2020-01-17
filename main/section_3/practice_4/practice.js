@@ -2,12 +2,12 @@ function create_updated_collection(collection_a, object_b) {
   //在这里写入代码
   let collectionC = [];
   let tempArr = [];
-  for (let itemA of collection_a) {
+  collection_a.forEach(itemA => {
     if (-1 === tempArr.indexOf(itemA)) {
       tempArr.push(itemA);
     }
-  }
-  for (let itemTemp of tempArr) {
+  });
+  tempArr.forEach(itemTemp => {
     if (itemTemp.includes("-")) {
       let helpString = itemTemp.split("");
       let count = 0;
@@ -26,16 +26,14 @@ function create_updated_collection(collection_a, object_b) {
       });
       collectionC.push({ key: itemTemp, count: countArr.length });
     }
-  }
-
-  let collectionB = object_b.value;
-  for (let itemC of collectionC) {
-    for (let itemB of collectionB) {
+  });
+  object_b.value.map(itemB => {
+    for (let itemC of collectionC) {
       if (itemC.key === itemB) {
         itemC.count -= parseInt(itemC.count / 3);
       }
     }
-  }
+  });
   return collectionC;
 }
 
