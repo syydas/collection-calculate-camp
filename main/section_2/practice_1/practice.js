@@ -2,17 +2,17 @@ function count_same_elements(collection) {
   //在这里写入代码
   let res = [];
   let helpArr = [];
-  for (let item of collection) {
+  collection.forEach(item => {
     if (-1 === helpArr.indexOf(item)) {
       helpArr.push(item);
     }
-  }
-  for (let item of helpArr) {
+  });
+  helpArr.forEach(item => {
     let countArr = collection.filter(function(sameItem) {
       return sameItem === item;
     });
-    res.push({'key': item, 'count': countArr.length});
-  }
+    res.push({ key: item, count: countArr.length });
+  });
   return res;
 }
 
