@@ -1,16 +1,7 @@
-'use strict';
+"use strict";
 
 function hybrid_operation_to_uneven(collection) {
-
-  //在这里写入代码
-  let res = [];
-   for (let item of collection) {
-     if (0 !== item % 2) {
-       res.push(item * 3 + 2);
-     }
-   }
-   return res;
+  return collection.filter(item => item % 2).map(item => item * 3 + 2);
 }
 
 module.exports = hybrid_operation_to_uneven;
-

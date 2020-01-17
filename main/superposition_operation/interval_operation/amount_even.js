@@ -1,14 +1,9 @@
 "use strict";
 
 function amount_even(collection) {
-  //在这里写入代码
-  let sum = 0;
-  for (let item of collection) {
-    if (0 === item % 2) {
-      sum += item;
-    }
-  }
-  return sum;
+  return collection
+    .filter(item => !(item % 2))
+    .reduce((num1, num2) => num1 + num2);
 }
 
 module.exports = amount_even;
