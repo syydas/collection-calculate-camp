@@ -1,16 +1,7 @@
-'use strict';
+"use strict";
 
 function compute_average(collection) {
-  /*let sum = collection.reduce((num1, num2) => {
-    return num1 + num2;
-  });*/
-  let sum = 0;
-  for (let item of collection) {
-    sum += item;
-  }
-  let average = sum / collection.length;
-  return average;
+  return collection.reduce((num1, num2) => num1 + num2) / collection.length;
 }
 
 module.exports = compute_average;
-

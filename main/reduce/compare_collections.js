@@ -1,19 +1,7 @@
-'use strict';
+"use strict";
 
 function compare_collections(collection_a, collection_b) {
-  if (collection_a.length === collection_b.length) {
-    for (let item in collection_b) {
-      if (collection_a[item] === collection_b[item])
-      return true;
-    }
-  }
-  else {
-    return false;
-  }
-  
-  //return collection_a.sort().toString() === collection_b.sort().toString();
+  return collection_a.sort().toString() === collection_b.sort().toString();
 }
 
 module.exports = compare_collections;
-
-
