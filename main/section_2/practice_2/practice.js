@@ -1,17 +1,17 @@
 function count_same_elements(collection) {
   //在这里写入代码
-  var res = [];
-  var helpArr = [];
-  for (var item of collection) {
+  let res = [];
+  let helpArr = [];
+  for (let item of collection) {
     if (-1 === helpArr.indexOf(item)) {
       helpArr.push(item);
     }
   }
-  for (var item of helpArr) {
+  for (let item of helpArr) {
     if (item.includes("-")) {
-      var helpString = item.split("");
-      var count = 0;
-      for (var z = 0; z < helpString.length; z++) {
+      let helpString = item.split("");
+      let count = 0;
+      for (let z = 0; z < helpString.length; z++) {
         if ("-" === helpString[z]) {
           count = z;
         }
@@ -21,7 +21,7 @@ function count_same_elements(collection) {
         count: parseInt(helpString[count + 1])
       });
     } else {
-      var countArr = collection.filter(function(sameItem) {
+      let countArr = collection.filter(function(sameItem) {
         return sameItem === item;
       });
       res.push({ key: item, count: countArr.length});

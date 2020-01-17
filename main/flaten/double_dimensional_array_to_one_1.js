@@ -1,10 +1,10 @@
 'use strict';
 
 function double_to_one(collection) {
-  var res = [];
-  for (var item of collection) {
+  let res = [];
+  for (let item of collection) {
     if (item instanceof Array) {
-      for (var itemIn of item) {
+      for (let itemIn of item) {
         res.push(itemIn);
       }
     }

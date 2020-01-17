@@ -1,13 +1,13 @@
 function collect_same_elements(collection_a, object_b) {
   //在这里写入代码
-  var arrA = [];
-  for (var itemA of collection_a) {
+  let arrA = [];
+  for (let itemA of collection_a) {
     arrA.push(itemA.key);
   }
-  var arrB = object_b.value;
-  var res = [];
-  for (var itemA of arrA) {
-    for (var itemB of arrB) {
+  let arrB = object_b.value;
+  let res = [];
+  for (let itemA of arrA) {
+    for (let itemB of arrB) {
       if (itemA === itemB) {
         res.push(itemA);
       }

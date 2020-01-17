@@ -3,8 +3,8 @@
 function hybrid_operation_to_uneven(collection) {
 
   //在这里写入代码
-  var res = [];
-   for (var item of collection) {
+  let res = [];
+   for (let item of collection) {
      if (0 !== item % 2) {
        res.push(item * 3 + 2);
      }

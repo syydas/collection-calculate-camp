@@ -1,8 +1,8 @@
 'use strict';
 
 function compute_median(collection) {
-  var median = 0;
-  var index = 0;
+  let median = 0;
+  let index = 0;
   collection = collection.sort(function(a, b) {
     return a - b;
   });

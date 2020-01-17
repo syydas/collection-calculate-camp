@@ -1,10 +1,10 @@
 'use strict';
 
-var count_same_elements = require("../../main/section_2/practice_2/practice.js");
+let count_same_elements = require("../../main/section_2/practice_2/practice.js");
 
 describe('practice-2-2', function() {
 
-  var collection = [
+  let collection = [
     "a", "a", "a",
     "e", "e", "e", "e", "e", "e", "e",
     "h", "h", "h", "h", "h", "h", "h", "h", "h", "h", "h",
@@ -17,7 +17,7 @@ describe('practice-2-2', function() {
   ];
 
   it("把A集合中相同的元素统计出数量", function() {
-    var result = count_same_elements(collection);
+    let result = count_same_elements(collection);
 
     expect(result).toEqual([
       {key: "a", count: 3},

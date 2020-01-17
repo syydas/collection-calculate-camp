@@ -1,7 +1,7 @@
 'use strict';
-var calculate_median = function(collection){
-  var median = 0;
-  var index = 0;
+let calculate_median = function(collection){
+  let median = 0;
+  let index = 0;
   collection = collection.sort(function(a, b) {
     return a - b;
   });

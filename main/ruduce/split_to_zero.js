@@ -1,8 +1,8 @@
 'use strict';
 
 function spilt_to_zero(number, interval) {
-  var res = [];
-  var item = number;
+  let res = [];
+  let item = number;
   res.push(item);
   do {
     item = Number((item - interval).toFixed(1));

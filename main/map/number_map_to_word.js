@@ -1,5 +1,5 @@
 'use strict';
-var number_map_to_word = function(collection){
+let number_map_to_word = function(collection){
   return collection.map(item => String.fromCharCode(item + 96));
 };
 

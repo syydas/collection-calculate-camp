@@ -1,8 +1,8 @@
 "use strict";
 
 function choose_even(collection) {
-  var res = [];
-  for (var item of collection) {
+  let res = [];
+  for (let item of collection) {
     if (0 === item % 2) {
       res.push(item);
     }

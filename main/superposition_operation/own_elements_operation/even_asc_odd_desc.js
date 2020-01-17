@@ -1,9 +1,9 @@
 "use strict";
-var even_asc_odd_desc = function(collection) {
-  var odd = [];
-  var even = [];
-  var res = [];
-  for (var item of collection) {
+let even_asc_odd_desc = function(collection) {
+  let odd = [];
+  let even = [];
+  let res = [];
+  for (let item of collection) {
     if (item % 2 == 0) {
       even.push(item);
     } else {

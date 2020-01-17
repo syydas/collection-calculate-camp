@@ -3,11 +3,11 @@
 function average_to_letter(collection) {
 
   //在这里写入代码
-  var sum = 0;
-  for (var item of collection) {
+  let sum = 0;
+  for (let item of collection) {
     sum += item;
   }
-  var average = Math.ceil(sum / collection.length);
+  let average = Math.ceil(sum / collection.length);
   return String.fromCharCode(average +96);
 }
 

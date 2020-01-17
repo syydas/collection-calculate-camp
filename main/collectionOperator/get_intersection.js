@@ -1,14 +1,14 @@
 "use strict";
 
 function get_intersection(collection_a, collection_b) {
-  var res = [];
-  for (var itemB of collection_b) {
-    for (var itemA of collection_a) {
+  let res = [];
+  collection_b.forEach(itemB => {
+    collection_a.forEach(itemA => {
       if (itemA === itemB) {
         res.push(itemB);
       }
-    }
-  }
+    });
+  });
   return res;
 }
 

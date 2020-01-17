@@ -1,14 +1,14 @@
 'use strict';
 
 function compute_average(collection) {
-  /*var sum = collection.reduce((num1, num2) => {
+  /*let sum = collection.reduce((num1, num2) => {
     return num1 + num2;
   });*/
-  var sum = 0;
-  for (var item of collection) {
+  let sum = 0;
+  for (let item of collection) {
     sum += item;
   }
-  var average = sum / collection.length;
+  let average = sum / collection.length;
   return average;
 }
 
