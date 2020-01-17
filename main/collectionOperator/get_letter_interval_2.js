@@ -6,12 +6,10 @@ function get_letter_interval_2(number_a, number_b) {
     for (let item = number_a; item <= number_b; item++) {
       res.push(numberMapToLetter(item));
     }
-  } else if (number_a > number_b) {
+  } else {
     for (let item = number_a; item >= number_b; item--) {
       res.push(numberMapToLetter(item));
     }
-  } else if (number_a === number_b) {
-    res.push(numberMapToLetter(number_a));
   }
   return res;
 }
